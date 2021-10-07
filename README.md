@@ -28,7 +28,7 @@ mvn spring-boot:run
 ```
 Para executar os testes:
 ```
-mvn tests
+mvn test
 ```
 
 ## Postman
