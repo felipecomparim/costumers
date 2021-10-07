@@ -32,7 +32,7 @@ mvn tests
 
 ## Postman
 
-  As definições de Endpoints do postman se encontram no arquivo `/costumers.postman_collection.json`
+  As definições de endpoints do Postman se encontram no arquivo `/costumers.postman_collection.json`
 
 ## Copyright
 
