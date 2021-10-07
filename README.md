@@ -11,8 +11,8 @@ Para fazer o build da aplicação é necessário
 - Apache Maven 3.2.3
 
 ## Banco de dados
- - A aplicação utiliza o Banco de Dados H2, integrado a mesma. Os dados de teste já estão persistidos no arquivo de dados `/dbfilez.mv.db`. 
- - Caso seja necessário restabelecer os dados iniciais, rodar o arquivo sql  em `/src/main/resources/data.sql`.
+ - A aplicação utiliza o Banco de Dados H2, integrado a mesma. Os dados de teste já estão persistidos no arquivo de dados `/dbfilez.mv.db`, que é utilizado. 
+ - Caso seja necessário restabelecer os dados iniciais, rodar o script SQL `/src/main/resources/data.sql`.
  - URL para acessar o console do Banco de Dados: `http://localhost:8282/h2-console`
 
 ## Documentação
