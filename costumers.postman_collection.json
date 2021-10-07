@@ -1,0 +1,229 @@
+{
+	"info": {
+		"_postman_id": "8fa034b9-ddbb-4ddf-a703-2b95894d5d55",
+		"name": "Builders - Costumers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cliente - findAll",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8282/api/v1/clientes?page=0&size=2000",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"api",
+						"v1",
+						"clientes"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "2000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cliente - findByCriteria",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8282/api/v1/clientes/findByCriteria?idadeMinima=38&idadeMaxima=41&page=0&size=90",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"api",
+						"v1",
+						"clientes",
+						"findByCriteria"
+					],
+					"query": [
+						{
+							"key": "estado",
+							"value": "SP",
+							"disabled": true
+						},
+						{
+							"key": "nome",
+							"value": "Ema",
+							"disabled": true
+						},
+						{
+							"key": "idadeMinima",
+							"value": "38"
+						},
+						{
+							"key": "idadeMaxima",
+							"value": "41"
+						},
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "cidade",
+							"value": "Ilh",
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": "90"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cliente - insert",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmb28iLCJleHAiOjE2MTU0MTU0MzMsImlhdCI6MTYxNTM3OTQzM30.bChEA-JGi6schqsSy-y6W1FwR5TMNcc3O2hpW-0w-OU",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\" : \"Valerio Soare36\",\r\n    \"cpf\" : \"000.000.000-87\",\r\n    \"telefone\" : \"9835-7789\",\r\n    \"endereco\" : \"Rua das garças, 310\",\r\n    \"cidade\" : \"João Pessoa\",\r\n    \"estado\" : \"PB\",\r\n    \"cep\" : \"79020-250\",\r\n    \"dataNascimento\" : \"06/07/1982\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8282/api/v1/clientes",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"api",
+						"v1",
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cliente - update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmb28iLCJleHAiOjE2MTU0MTU0MzMsImlhdCI6MTYxNTM3OTQzM30.bChEA-JGi6schqsSy-y6W1FwR5TMNcc3O2hpW-0w-OU",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"nome\": \"Enrico Hugo Sales_editado2\",\r\n        \"cpf\": \"883.457.289-01\",\r\n        \"telefone\": \"(34) 2724-7760\",\r\n        \"endereco\": \"Rua Um, 458\",\r\n        \"cep\": \"38071-710\",\r\n        \"cidade\": \"Uberaba\",\r\n        \"estado\": \"MG\",\r\n        \"dataNascimento\": \"23/07/1700\"\r\n }"
+				},
+				"url": {
+					"raw": "localhost:8282/api/v1/clientes/91",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"api",
+						"v1",
+						"clientes",
+						"91"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cliente - delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmb28iLCJleHAiOjE2MTU0MTU0MzMsImlhdCI6MTYxNTM3OTQzM30.bChEA-JGi6schqsSy-y6W1FwR5TMNcc3O2hpW-0w-OU",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"nome\": \"Enrico Hugo Sales_editado\",\r\n        \"cpf\": \"883.457.289-01\",\r\n        \"telefone\": \"(34) 2724-7760\",\r\n        \"endereco\": \"Rua Um, 458\",\r\n        \"cep\": \"38071-710\",\r\n        \"cidade\": \"Uberaba\",\r\n        \"estado\": \"MG\",\r\n        \"dataNascimento\": \"1969-07-23\",\r\n        \"idade\": 52\r\n }"
+				},
+				"url": {
+					"raw": "localhost:8282/api/v1/clientes/193",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"api",
+						"v1",
+						"clientes",
+						"193"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

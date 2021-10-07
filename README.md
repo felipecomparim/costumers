@@ -1,4 +1,4 @@
-# costumers
+# fcc-tech-costumers
 [![License](http://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 
 Aplicação [Spring Boot](http://projects.spring.io/spring-boot/) que fornece uma API REST para cadastro de clientes. 
