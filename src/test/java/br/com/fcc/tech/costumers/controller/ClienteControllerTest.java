@@ -109,6 +109,7 @@ public class ClienteControllerTest {
 	            .andExpect(jsonPath("$", notNullValue()))
 	            .andExpect(jsonPath("$.nome", is("Ricardo Alves[1]")));
 	}
+	// inserido ipad codigo
 	
 	@Test
 	public void deleteClienteById_success() throws Exception {
